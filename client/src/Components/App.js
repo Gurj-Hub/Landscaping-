@@ -4,6 +4,7 @@ import GlobalStyles from "./GlobalStyles";
 import Header from "./Header";
 import Home from "./Home";
 import Contact from "./Contact";
+import Footer from "./Footer";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </Router>
   );
 };

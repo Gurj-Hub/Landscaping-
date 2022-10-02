@@ -1,7 +1,12 @@
 import styled, { keyframes } from "styled-components";
 
 const Home = () => {
-  return <h1>This is the homepage</h1>;
+  return <Div>This is the homepage</Div>;
 };
 
 export default Home;
+
+const Div = styled.div`
+  height: 100vh;
+  border: 1px solid red;
+`;
