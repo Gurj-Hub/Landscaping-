@@ -11,7 +11,9 @@ const Header = () => {
       <Div> Call/Text Today! (123) 456-7890 | office@landwiz.com</Div>
       <Div>
         <a href="https://www.facebook.com" target="_blank">
-          <FaFacebook style={{ height: "30px", width: "30px" }}></FaFacebook>
+          <FaFacebook
+            style={{ height: "30px", width: "30px", marginTop: "2px" }}
+          ></FaFacebook>
         </a>
         <a href="https://www.instagram.com" target="_blank">
           <AiFillInstagram
@@ -19,10 +21,14 @@ const Header = () => {
           ></AiFillInstagram>
         </a>
         <a href="https://twitter.com/?lang=en" target="_blank">
-          <FaTwitter style={{ height: "30px", width: "30px" }}></FaTwitter>
+          <FaTwitter
+            style={{ height: "30px", width: "30px", marginTop: "3px" }}
+          ></FaTwitter>
         </a>
         <a href="https://outlook.live.com/owa/" target="_blank">
-          <GrMail style={{ height: "30px", width: "30px" }}></GrMail>
+          <GrMail
+            style={{ height: "30px", width: "30px", marginTop: "3px" }}
+          ></GrMail>
         </a>
       </Div>
     </Head>
@@ -32,14 +38,18 @@ const Header = () => {
 export default Header;
 
 const Div = styled.div`
-  display: flex;
-  justify-content: space-evenly;
-  font-size: 15px;
-  color: white;
-  width: 100%;
+  display: none;
 
-  a {
+  @media (max-width: 414px) {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 15px;
     color: white;
+    width: 100%;
+
+    a {
+      color: white;
+    }
   }
 `;
 
