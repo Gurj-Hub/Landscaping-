@@ -13,22 +13,23 @@ const Header = () => {
         <a href="https://www.facebook.com" target="_blank">
           <FaFacebook style={{ height: "30px", width: "30px" }}></FaFacebook>
         </a>
-        <AiFillInstagram
-          style={{ height: "34px", width: "34px" }}
-        ></AiFillInstagram>
-        <FaTwitter style={{ height: "30px", width: "30px" }}></FaTwitter>
-        <GrMail style={{ height: "30px", width: "30px" }}></GrMail>
+        <a href="https://www.instagram.com" target="_blank">
+          <AiFillInstagram
+            style={{ height: "34px", width: "34px" }}
+          ></AiFillInstagram>
+        </a>
+        <a href="https://twitter.com/?lang=en" target="_blank">
+          <FaTwitter style={{ height: "30px", width: "30px" }}></FaTwitter>
+        </a>
+        <a href="https://outlook.live.com/owa/" target="_blank">
+          <GrMail style={{ height: "30px", width: "30px" }}></GrMail>
+        </a>
       </Div>
     </Head>
   );
 };
 
 export default Header;
-
-const RedirectToSocial = styled.a`
-  /* text-decoration: none; */
-  list-style-type: none;
-`;
 
 const Div = styled.div`
   display: flex;
