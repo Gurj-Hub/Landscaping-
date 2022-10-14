@@ -9,6 +9,14 @@ const Header = () => {
   return (
     <Head>
       <Div> Call/Text Today! (123) 456-7890 | office@landwiz.com</Div>
+      <Div>
+        <FaFacebook style={{ height: "30px", width: "30px" }}></FaFacebook>
+        <AiFillInstagram
+          style={{ height: "34px", width: "34px" }}
+        ></AiFillInstagram>
+        <FaTwitter style={{ height: "30px", width: "30px" }}></FaTwitter>
+        <GrMail style={{ height: "30px", width: "30px" }}></GrMail>
+      </Div>
     </Head>
   );
 };
@@ -16,14 +24,18 @@ const Header = () => {
 export default Header;
 
 const Div = styled.div`
+  display: flex;
+  justify-content: space-evenly;
   font-size: 15px;
   color: white;
+  width: 100%;
 `;
 
 const Head = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   height: 50px;
   border: 2px solid blue;
   background-color: green;
