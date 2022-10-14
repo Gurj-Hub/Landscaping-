@@ -10,7 +10,9 @@ const Header = () => {
     <Head>
       <Div> Call/Text Today! (123) 456-7890 | office@landwiz.com</Div>
       <Div>
-        <FaFacebook style={{ height: "30px", width: "30px" }}></FaFacebook>
+        <a href="https://www.facebook.com" target="_blank">
+          <FaFacebook style={{ height: "30px", width: "30px" }}></FaFacebook>
+        </a>
         <AiFillInstagram
           style={{ height: "34px", width: "34px" }}
         ></AiFillInstagram>
@@ -23,12 +25,21 @@ const Header = () => {
 
 export default Header;
 
+const RedirectToSocial = styled.a`
+  /* text-decoration: none; */
+  list-style-type: none;
+`;
+
 const Div = styled.div`
   display: flex;
   justify-content: space-evenly;
   font-size: 15px;
   color: white;
   width: 100%;
+
+  a {
+    text-decoration: none;
+  }
 `;
 
 const Head = styled.div`
