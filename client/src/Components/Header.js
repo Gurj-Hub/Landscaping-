@@ -4,12 +4,17 @@ import { AiFillInstagram } from "react-icons/ai";
 import { FaTwitter } from "react-icons/fa";
 import { GrMail } from "react-icons/gr";
 import { FiPhoneCall } from "react-icons/fi";
-// import {Link} from
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
     <Head>
-      <BigScreen></BigScreen>
+      <BigScreen>
+        <TheLink to="/">Home</TheLink>
+        <TheLink to="/About">About</TheLink>
+        <TheLink to="/ FAQs">FAQs</TheLink>
+        <TheLink to="/Contact">Contact Us</TheLink>
+      </BigScreen>
       <Div> Call/Text Today! (123) 456-7890 | office@landwiz.com</Div>
       <Div>
         <a href="https://www.facebook.com" target="_blank">
@@ -39,7 +44,8 @@ const Header = () => {
 
 export default Header;
 
-const Link = styled(Link)``;
+const TheLink = styled(NavLink)``;
+
 const BigScreen = styled.div`
   @media (min-width: 415px) {
     display: flex;
