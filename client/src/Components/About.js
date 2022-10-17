@@ -5,3 +5,8 @@ const About = () => {
 };
 
 export default About;
+
+const Div = styled.div`
+  height: 800px;
+  border: 1px solid red;
+`;

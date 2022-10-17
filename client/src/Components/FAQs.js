@@ -5,3 +5,8 @@ const FAQs = () => {
 };
 
 export default FAQs;
+
+const Div = styled.div`
+  height: 800px;
+  border: 1px solid red;
+`;
